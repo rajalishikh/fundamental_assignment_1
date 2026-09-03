@@ -27,3 +27,5 @@ const describeValue=(value)=>{
 
 }
 
+const result=describeValue(NaN)
+console.log(result)
