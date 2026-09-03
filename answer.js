@@ -94,16 +94,16 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
     }
 
     let requiredRate = (runsNeeded / ballsLeft) * 6;
-    let verdict = "";
+    let final_answer = "";
 
     if (requiredRate <= 6) {
-        verdict = "Comfortable";
+        final_answer = "Comfortable";
     } else if (requiredRate <= 12) {
-        verdict = "Tough";
+        final_answer = "Tough";
     } else {
-        verdict = "Almost Impossible";
+        final_answer = "Almost Impossible";
     }
-    return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
+    return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${final_answer}`;
 };
 
 
