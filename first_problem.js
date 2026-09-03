@@ -14,7 +14,7 @@ const describeValue=(value)=>{
     else if (typeof value==="true"){
          return `"boolean | truthy"`
     }
-    else if (typeof value==="null" ){
+    else if ( value=== null){
          return `"object | falsy"`
     }
      else if (typeof value==="undefined"){
@@ -27,5 +27,3 @@ const describeValue=(value)=>{
 
 }
 
-const result=describeValue(null)
-console.log(result)
